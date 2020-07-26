@@ -11,7 +11,10 @@ Assumptions: (passenger = customer)
 
 Schemas that I used:
 driver and customer
-MySQL script: CREATE TABLE driver(
+MySQL script: 
+
+
+CREATE TABLE driver(
 				driver_id INT PRIMARY KEY,
 				driver_name varchar(50),
 				total_rides INT,
@@ -27,7 +30,9 @@ MySQL script: CREATE TABLE driver(
 
 and I also created a table 'ride' which can be used to get information about the rides, corresponding driver and passenger. 
 
-ride 			CREATE TABLE ride(
+ride 			
+
+CREATE TABLE ride(
 				ride_id INT PRIMARY KEY,
 				driver_id INT,
 				customer_id INT,
